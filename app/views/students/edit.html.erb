@@ -1,6 +1,7 @@
 <h1>Editing Student</h1>
+<div class="col col-md-3">
+  <%= render 'form', student: @student %>
 
-<%= render 'form', student: @student %>
-
-<%= link_to 'Show', @student %> |
-<%= link_to 'Back', students_path %>
+  <%= link_to 'Show', @student,class:'btn btn-warning' %> |
+  <%= link_to 'Back', students_path, class:'btn btn-success' %>
+</div>

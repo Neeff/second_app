@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @student.name %>
+  <h4><strong>Name:</strong></h4>
+  <h5><%= @student.name %></h5>
 </p>
 
 <p>
-  <strong>Age:</strong>
-  <%= @student.age %>
+<h4><strong>Age:</strong></h4>
+  <h5><%= @student.age %></h5>
 </p>
 
-<%= link_to 'Edit', edit_student_path(@student) %> |
-<%= link_to 'Back', students_path %>
+<%= link_to 'Edit', edit_student_path(@student),class:'btn btn-warning' %> |
+<%= link_to 'Back', students_path , class:'btn btn-success' %>
